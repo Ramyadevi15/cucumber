@@ -1,0 +1,79 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "verify login functionality for valid username and invalid password",
+        "description": "",
+        "id": "verify-the-facebook-login-functionality;verify-login-functionality-for-valid-username-and-invalid-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10840340300,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "user enters in to login page",
+            "match": {
+              "location": "StepDefinitions.user_enters_in_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 305671300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user enters their  username and password",
+            "match": {
+              "location": "StepDefinitions.user_enters_their_username_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "arun@gmail.com",
+                  "abc"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 123210500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click in to the login button",
+            "match": {
+              "location": "StepDefinitions.user_click_in_to_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 245900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "page displayed error message",
+            "match": {
+              "location": "StepDefinitions.page_displayed_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "verify the facebook login functionality",
+    "description": "",
+    "id": "verify-the-facebook-login-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Facebook.feature",
+    "tags": []
+  }
+]
